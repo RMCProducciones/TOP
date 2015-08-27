@@ -1,0 +1,495 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/dist/bootstrap-confirmation2/bootstrap-confirmation.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/assets/js/docs.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://mistic100.github.io/Bootstrap-Confirmation/assets/css/docs.min.css" rel="stylesheet" type="text/css">
+    <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css"-->
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding:20px;">
+            <img src="https://www.minagricultura.gov.co/imgLayout/Banner_nuevo_madr.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>TOP</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Grupos</a>
+            </li>
+            <li>
+              <a href="#">Talentos Rurales</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leonard Abella<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Cambiar Contraseña</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="1-grupos.html">Grupos</a>
+              </li>
+              <li class="active">Beneficiarios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>NP-RIC-3-2014/05-001 | Andrés Carne de Res</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="input-group">
+              <input class="form-control" placeholder="Buscar..." type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Buscar</button>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="btn-group">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Buscar herramientas <span class="fa fa-caret-down"></span></a>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <a class="btn btn-default">Limpiar</a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <label>Género</label>
+            <br>
+            <input list="genero" placeholder="Género..." class="form-control">
+            <datalist id="genero">
+              <option value="Masculino"></option>
+              <option value="Femenino"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>¿Es joven rural?</label>
+            <br>
+            <input list="joven" placeholder="Si / No..." class="form-control">
+            <datalist id="joven">
+              <option value="Si"></option>
+              <option value="No"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Rol dentro del grupo</label>
+            <br>
+            <input list="rol-grupo" placeholder="Rol dentro del grupo..." class="form-control">
+            <datalist id="rol-grupo">
+              <option value="Representante del grupo"></option>
+              <option value="Suplente 1"></option>
+              <option value="Suplente 2"></option>
+              <option value="Integrante"></option>
+              <option value="Tesorero"></option>
+              <option value="Secretario"></option>
+              <option value="Presidente"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label contenteditable="true">¿Desplazado por la violencia?</label>
+            <br>
+            <input list="desplazado" placeholder="Si / No..." class="form-control">
+            <datalist id="desplazado">
+              <option value="Si"></option>
+              <option value="No"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label>¿Pertenece a red unidos?</label>
+            <br>
+            <input list="red-unidos" placeholder="Si / No..." class="form-control">
+            <datalist id="red-unidos">
+              <option value="Si"></option>
+              <option value="No"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Rol dentro del grupo familiar</label>
+            <br>
+            <input list="rol-familia" placeholder="Rol dentro del grupo familiar..." class="form-control">
+            <datalist id="rol-familia">
+              <option value="Jefe de hogar"></option>
+              <option value="Miembro del grupo familiar"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Pertentencia étnica</label>
+            <br>
+            <input list="etnica" placeholder="Pertentencia étnica..." class="form-control">
+            <datalist id="etnica">
+              <option value="Indígena"></option>
+              <option value="Afrodescendiente"></option>
+              <option value="Palenquero de San Basilio"></option>
+              <option value="Raizal (archipiélago de San Andrés y Providencia)"></option>
+              <option value="ROM (gitano)"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label contenteditable="true">Número de hijos menores de 5 años</label>
+            <br>
+            <input list="hijos5" placeholder="Número de hijos menores de 5 años..." class="form-control">
+            <datalist id="hijos5">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7 o mas"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label>Número de miembros del núcleo familiar</label>
+            <br>
+            <input list="nucleo-familiar" placeholder="Número de miembros del núcleo familiar..." class="form-control">
+            <datalist id="nucleo-familiar">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7 o mas"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Número de hombres pertenecientes al núcleo familiar</label>
+            <br>
+            <input list="numero-hombres" placeholder="Número de hombres pertenecientes al núcleo familiar..." class="form-control">
+            <datalist id="numero-hombres">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7 o mas"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Número de mujeres pertenecientes al núcleo familiar</label>
+            <br>
+            <input list="numero-mujeres" placeholder="Número de mujeres pertenecientes al núcleo familiar..." class="form-control">
+            <datalist id="numero-mujeres">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7 o mas"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">-</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label>¿Sabe leer?</label>
+            <br>
+            <input list="leer" placeholder="Si / No..." class="form-control">
+            <datalist id="leer">
+              <option value="Si"></option>
+              <option value="No"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>¿Sabe escribir?</label>
+            <br>
+            <input list="escribir" placeholder="Si / No..." class="form-control">
+            <datalist id="escribir">
+              <option value="Si"></option>
+              <option value="No"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">
+            <label>Nivel educativo</label>
+            <br>
+            <input list="nivel-educativo" placeholder="Nivel educativo..." class="form-control">
+            <datalist id="nivel-educativo">
+              <option value="Prescolar"></option>
+              <option value="Primaria"></option>
+              <option value="Universitaria"></option>
+              <option value="Ningun nivel educativo"></option>
+            </datalist>
+          </div>
+          <div class="col-md-3">-</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="btn-group">
+              <a href="5-beneficiarios-nuevo.html" class="btn btn-default">Nuevo</a>
+              <a href="#" class="btn btn-default">Activar</a>
+              <a href="#" class="btn btn-default">Desactivar</a>
+              <a href="#" class="btn btn-default" title="¿Eliminar registros?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger">Eliminar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>
+                    <input type="checkbox">
+                  </th>
+                  <th>Documento</th>
+                  <th>Nombres</th>
+                  <th>Apellidos</th>
+                  <th>Rol (Comité)</th>
+                  <th>Cargo (Entidad)</th>
+                  <th>Entidad</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>92544859</td>
+                  <td>JHONATTAN GUILLERMO</td>
+                  <td>MARTINEZ RIBÓN</td>
+                  <td>Participante</td>
+                  <td>Funcionario</td>
+                  <td>Alcaldía</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>52345980</td>
+                  <td>JUAN CARLOS</td>
+                  <td>ROJAS PINZÓN</td>
+                  <td>Participante</td>
+                  <td>Funcionario</td>
+                  <td>Car</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>72435234</td>
+                  <td>CAROLINA</td>
+                  <td>ANGARITA GÓMEZ</td>
+                  <td>Participante</td>
+                  <td>Funcionario</td>
+                  <td>Umata</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>80234432</td>
+                  <td>GUSTAVO ADOLFO</td>
+                  <td>MENDIETA PÉREZ</td>
+                  <td>Vocero</td>
+                  <td>Coordinador Territorial</td>
+                  <td>Ministerio</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>52432324</td>
+                  <td>MARÍA CONSTANZA</td>
+                  <td>BAEZ CASTRO</td>
+                  <td>Secretario</td>
+                  <td>Promotor</td>
+                  <td>Ministerio</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>78234322</td>
+                  <td>HUGO ROBERTO</td>
+                  <td>MARTINEZ CASTRO</td>
+                  <td>Participante</td>
+                  <td>Funcionario</td>
+                  <td>Banco Agrario</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>80768654</td>
+                  <td>JHONY ALEXANDER</td>
+                  <td>ABELLA ESPITIA</td>
+                  <td>Participante</td>
+                  <td>Talento Rural</td>
+                  <td>No aplica</td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> | </a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="pagination">
+              <li>
+                <a href="#">Anterior</a>
+              </li>
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">Siguiente</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('[data-toggle=confirmation]').confirmation();
+                      //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
+                      //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
+    </script>
+    <footer class="section section-primary alert alert-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Capacidades Empresariales</h1>
+            <p>Ministerio de Agricultura y Desarrollo Rural.
+              <br>República de Colombia. Bogotá D.C
+              <br>Avenida Jimenez N°. 7A - 17. PBX (+571)2543300</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5PrfPlcPTzKS_CruxYUjOwWqC-fjZuv0prAHw6TBr479vv_B7w" class="img-thumbnail" height="220px" width="130px">
+                <img src="http://www.nu.org.bo/wp-content/uploads/2013/03/Logo_FIDA.png" class="img-thumbnail" height="220px" width="130px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
