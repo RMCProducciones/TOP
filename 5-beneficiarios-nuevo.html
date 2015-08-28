@@ -63,10 +63,7 @@
                 <a href="#">Inicio</a>
               </li>
               <li>
-                <a href="1-grupos.html">Grupos</a>
-              </li>
-              <li>
-                <a href="4-beneficiarios.html">Beneficiarios</a>
+                <a href="#">Grupos</a>
               </li>
               <li class="active">Nuevo</li>
             </ul>
@@ -94,227 +91,166 @@
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputPassword3" class="control-label">Documento</label>
+                  <label for="inputEmail3" class="control-label">Departamento</label>
                 </div>
                 <div class="col-sm-10">
-                  <input class="form-control" placeholder="Documento..." type="text" id="inputPassword3">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputPassword3" class="control-label">Nombres</label>
-                </div>
-                <div class="col-sm-10">
-                  <input class="form-control" placeholder="Nombres..." type="text" id="inputPassword3">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputPassword3" class="control-label">Apellidos</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Apellidos..." id="inputPassword3">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Género</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Género..." list="Género">
-                  <datalist id="Género">
-                    <option value="Másculino"></option>
-                    <option value="Femenino"></option>
+                  <input list="departamento" placeholder="Departamento..." class="form-control" type="text">
+                  <datalist id="departamento">
+                    <option value="Antioquia" class="form-control"></option>
+                    <option value="Amazonas"></option>
+                    <option value="Bolívar"></option>
+                    <option value="Caquetá"></option>
+                    <option value="Cundinamarca"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">¿Es joven rural?</label>
+                  <label for="inputEmail3" class="control-label">Municipio</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Si / No..." list="¿Es joven rural?">
-                  <datalist id="E">
-                    <option value="Si"></option>
-                    <option value="No"></option>
+                  <input class="form-control" placeholder="Municipio..." list="municipio">
+                  <datalist id="municipio">
+                    <option value="Abrego"></option>
+                    <option value="Corinto"></option>
+                    <option value="Tambo"></option>
+                    <option value="Granada"></option>
+                    <option value="López"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Rol dentro del grupo</label>
+                  <label for="inputEmail3" class="control-label">Zona</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Rol dentro del grupo..." list="Rol dentro del grupo">
-                  <datalist id="Rol dentro del grupo">
-                    <option value="Presidente"></option>
-                    <option value="Representante del grupo"></option>
-                    <option value="Suplente 1"></option>
-                    <option value="Suplente 2"></option>
-                    <option value="Secretario"></option>
-                    <option value="Tesorero"></option>
-                    <option value="Integrante"></option>
+                  <input class="form-control" placeholder="Zona..." list="zona">
+                  <datalist id="zona">
+                    <option value="Nudo de Paramillo"></option>
+                    <option value="Cauca Costa Pacífica"></option>
+                    <option value="Cauca Andino"></option>
+                    <option value="Nariño Costa Pacífica"></option>
+                    <option value="Nariño Andino"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">¿Desplazados por la violencia?</label>
+                  <label for="inputEmail3" class="control-label">Tipo de Grupo</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Si / No..." list="¿Desplazados por la violencia?">
-                  <datalist id="E">
-                    <option value="Si"></option>
-                    <option value="No"></option>
+                  <input type="text" class="form-control" placeholder="Tipo Grupo..." list="tipoGrupo">
+                  <datalist id="tipoGrupo">
+                    <option value="Grupo no formal sin negocio"></option>
+                    <option value="Grupo no formal con negocio"></option>
+                    <option value="Grupo formal sin negocio"></option>
+                    <option value="Grupo formal con negocio"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">¿Pertenece a red unidos?</label>
+                  <label for="inputPassword3" class="control-label">Código Grupo</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Si / No..." list="¿Pertenece a red unidos?">
-                  <datalist id="E">
-                    <option value="Si"></option>
-                    <option value="No"></option>
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Código del Grupo..." disabled="disabled">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Nombre Grupo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Nombre grupo...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Dirección</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Dirección, vereda o corregimiento...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Tipo Organización</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Tipo Organización..." list="tipoOrganizacion">
+                  <datalist id="tipoOrganizacion">
+                    <option value="Asociación"></option>
+                    <option value="Cooperativa"></option>
+                    <option value="Precooperativa"></option>
+                    <option value="Fundación"></option>
+                    <option value="Junta de Acción Comunal"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Rol dentro del grupo familiar</label>
+                  <label for="inputPassword3" class="control-label">Nit</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Rol dentro del grupo familiar..." list="Rol dentro del grupo familiar">
-                  <datalist id="Rol dentro del grupo familiar">
-                    <option value="Jefe de hogar"></option>
-                    <option value="Miembro del grupo familiar"></option>
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Nit de la organización...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Teléfono Fijo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Teléfono fijo...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Teléfono Móvil</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Teléfono móvil...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">¿Cuenta bancaria?</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="checkbox">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Número de Cuenta</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Número de cuenta...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Tipo de Cuenta</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Tipo de cuenta..." list="tipoCuenta">
+                  <datalist id="tipoCuenta">
+                    <option value="Ahorro"></option>
+                    <option value="Corriente"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Pertenencia étnica</label>
+                  <label for="inputEmail3" class="control-label">Banco</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Pertenencia étnica..." list="Pertenencia étnica">
-                  <datalist id="Pertenencia étnica">
-                    <option value="Indígena"></option>
-                    <option value="Afrodescendencia"></option>
-                    <option value="Palenquero de San Basilio"></option>
-                    <option value="Raizal (Archipiélago de San Andrés y Providencia"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Número de hijos menores de 5 años</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Número de hijos menores de 5 años..." list="Número de hijos menores de 5 años">
-                  <datalist id="Número de hijos menores de 5 años">
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                    <option value="7 o más"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Número de miembros del núcleo familizar</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Número de miembros del núcleo familizar..." list="Número de miembros del núcleo familiar">
-                  <datalist id="Número de hijos menores de 5 años">
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                    <option value="7 o más"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Número de mujeres pertenecientes al núcleo familizar</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Número de mujeres pertenecientes al núcleo familizar..." list="Número de mujeres pertenecientes al núcleo familiar">
-                  <datalist id="Número de mujeres pertenecientes al al núcleo familiar">
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                    <option value="7 o más"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Número de hombres pertenecientes al núcleo familizar</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Número de hombres pertenecientes al núcleo familiar..." list="Número de hombres pertenecientes al núcleo familiar">
-                  <datalist id="Número de hombres pertenecientes al núcleo familiar">
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                    <option value="7 o más"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">¿Sabe leer?</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Si / No..." list="¿Sabe leerl?">
-                  <datalist id="E">
-                    <option value="Si"></option>
-                    <option value="No"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">¿Sabe escribir?</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Si / No..." list="¿Sabe escribir?">
-                  <datalist id="E">
-                    <option value="Si"></option>
-                    <option value="No"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Nivel educativo</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Nivel educativo..." list="Nivel Educativo">
-                  <datalist id="E">
-                    <option value="Preescolar"></option>
-                    <option value="Primaria"></option>
-                    <option value="Secundaria"></option>
-                    <option value="Universitaria"></option>
-                    <option value="Ningún nivel educativo"></option>
+                  <input type="text" class="form-control" placeholder="Banco..." list="banco">
+                  <datalist id="banco">
+                    <option value="Banco Agrario"></option>
+                    <option value="Bancolombia"></option>
+                    <option value="Banco de Bogotá"></option>
+                    <option value="Banco Popular"></option>
+                    <option value="Banco de Crédito"></option>
                   </datalist>
                 </div>
               </div>

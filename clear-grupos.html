@@ -42,9 +42,6 @@
             <li class="active">
               <a href="8-clear.html">CLEAR</a>
             </li>
-            <li>
-              <a href="seguimiento.html">Seguimiento</a>
-            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -69,12 +66,12 @@
           <div class="col-md-12">
             <ul class="breadcrumb">
               <li>
-                <a href="0-inicio.html">Inicio</a>
+                <a href="#">Inicio</a>
               </li>
               <li>
                 <a href="8-clear.html">CLEAR</a>
               </li>
-              <li class="active">Integrantes del CLEAR</li>
+              <li class="active">Grupos Presentes</li>
             </ul>
           </div>
         </div>
@@ -84,7 +81,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>2014/05/01 | Habilitación | IEA - Iniciativa Económica Asociativa</h2>
+            <h2>2014/05/01 | Grupos Presentes</h2>
           </div>
         </div>
       </div>
@@ -92,8 +89,8 @@
     <br>
     <script>
       $('[data-toggle=confirmation]').confirmation();
-                                      //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
-                                      //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
+                                              //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
+                                              //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
     </script>
     <div class="section">
       <div class="container">
@@ -118,29 +115,8 @@
               </div>
             </div>
             <br>
-            <div class="row well">
-              <div class="col-md-6">
-                <label>Cargo</label>
-                <br>
-                <input list="cargo" placeholder="Cargo..." class="form-control">
-                <datalist id="cargo">
-                  <option value="Funcionario"></option>
-                  <option value="Promotor"></option>
-                </datalist>
-              </div>
-              <div class="col-md-6">
-                <label>Entidad</label>
-                <br>
-                <input list="entidad" placeholder="Entidad..." class="form-control">
-                <datalist id="entidad">
-                  <option value=""></option>
-                </datalist>
-              </div>
-            </div>
             <hr>
             <div class="btn-group">
-              <a href="clear-integrantes-nuevo.html" class="btn btn-default">Nuevo</a>
-              <a href="#" class="btn btn-default">Eliminar</a>
               <a href="#" class="btn btn-default">Asignar</a>
             </div>
             <table class="table">
@@ -160,10 +136,11 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>JHONATTAN MARTINEZ RIBÓN
-                    <br>92544859
-                    <br>Funcionario
-                    <br>Alcaldía</td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                     <br>
@@ -179,10 +156,11 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>JUAN CARLOS ROJAS PINZÓN
-                    <br>92544859
-                    <br>Funcionario
-                    <br>Car</td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                     <br>
@@ -198,10 +176,11 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>CAROLINA ANGARITA GÓMEZ
-                    <br>72435234
-                    <br>Funcionario
-                    <br>Umata</td>
+                  <td>Capacidades Empresariales
+                    <br>NP-RIC-3-2014/05-003
+                    <br>En curso
+                    <br>
+                  </td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                     <br>
@@ -217,10 +196,11 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>GUSTAVO ADOLFO MENDIETA PÉREZ
-                    <br>80234432
-                    <br>Coordinador Territorial
-                    <br>Ministerio de Agricultura y Desarrollo Rural</td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                     <br>
@@ -236,10 +216,11 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>MARÍA CONSTANZA BAEZ CASTRO&nbsp;
-                    <br>52432324
-                    <br>Promotor
-                    <br>Ministerio de Agricultura y Desarrollo Rural</td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                     <br>
@@ -304,8 +285,8 @@
                   <th>
                     <input type="checkbox">
                   </th>
-                  <th>Integrante del CLEAR</th>
-                  <th>Rol (Comité)</th>
+                  <th>Grupos</th>
+                  <th></th>
                   <th>Acciones</th>
                 </tr>
               </thead>
@@ -315,15 +296,17 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>JHONATTAN MARTINEZ RIBÓN
-                    <br>92544859
-                    <br>Funcionario
-                    <br>Alcaldía</td>
-                  <td>Vocero</td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
+                  <td></td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
                     <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span> | </a>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
                   </td>
                 </tr>
                 <tr>
@@ -331,97 +314,24 @@
                   <td>
                     <input type="checkbox">
                   </td>
-                  <td>JUAN CARLOS ROJAS PINZÓN
-                    <br>92544859
-                    <br>Funcionario
-                    <br>Car</td>
-                  <td>Secretario</td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
+                  <td></td>
                   <td>
                     <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
                     <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span> |  </a>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
                   </td>
                 </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                    <input type="checkbox">
-                  </td>
-                  <td>CAROLINA ANGARITA GÓMEZ
-                    <br>72435234
-                    <br>Funcionario
-                    <br>Umata</td>
-                  <td>Participante</td>
-                  <td>
-                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
-                    <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    <input type="checkbox">
-                  </td>
-                  <td>GUSTAVO ADOLFO MENDIETA PÉREZ
-                    <br>80234432
-                    <br>Coordinador Territorial
-                    <br>Ministerio de Agricultura y Desarrollo Rural</td>
-                  <td>Participante</td>
-                  <td>
-                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
-                    <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>
-                    <input type="checkbox">
-                  </td>
-                  <td>MARÍA CONSTANZA BAEZ CASTRO&nbsp;
-                    <br>52432324
-                    <br>Promotor
-                    <br>Ministerio de Agricultura y Desarrollo Rural</td>
-                  <td>Participante</td>
-                  <td>
-                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
-                    <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    <input type="checkbox">
-                  </td>
-                  <td>HUGO ROBERTO MARTINEZ CASTRO
-                    <br>78234322
-                    <br>Funcionario
-                    <br>Banco Agrario</td>
-                  <td>Participante</td>
-                  <td>
-                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
-                    <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    <input type="checkbox">
-                  </td>
-                  <td>JHONY ALEXANDER ABELLA ESPITIA
-                    <br>80768654
-                    <br>Talento Rural
-                    <br>No aplica</td>
-                  <td>Participante</td>
-                  <td>
-                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
-                    <a href="#" title="Editar" alt="Editar"></a>
-                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
-                  </td>
-                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
               </tbody>
             </table>
           </div>
