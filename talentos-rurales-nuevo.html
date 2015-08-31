@@ -1,0 +1,290 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css"-->
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding:20px;">
+            <img src="https://www.minagricultura.gov.co/imgLayout/Banner_nuevo_madr.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>TOP</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Grupos</a>
+            </li>
+            <li>
+              <a href="#">Talentos Rurales</a>
+            </li>
+            <li class="">
+              <a href="8-clear.html">CLEAR</a>
+            </li>
+            <li>
+              <a href="seguimiento.html">Seguimiento</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leonard Abella<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Cambiar Contraseña</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="0-inicio.html">Inicio</a>
+              </li>
+              <li>
+                <a href="7-talentos-rurales">Talentos Rurales</a>
+              </li>
+              <li class="active">Nuevo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="btn-group">
+              <a href="#" class="btn btn-success">Guardar</a>
+              <a href="#" class="btn btn-danger">Cancelar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Departamento</label>
+                </div>
+                <div class="col-sm-10">
+                  <input list="departamento" placeholder="Departamento..." class="form-control" type="text">
+                  <datalist id="departamento">
+                    <option value="Antioquia" class="form-control"></option>
+                    <option value="Amazonas"></option>
+                    <option value="Bolívar"></option>
+                    <option value="Caquetá"></option>
+                    <option value="Cundinamarca"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Municipio</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="form-control" placeholder="Municipio..." list="municipio">
+                  <datalist id="municipio">
+                    <option value="Abrego"></option>
+                    <option value="Corinto"></option>
+                    <option value="Tambo"></option>
+                    <option value="Granada"></option>
+                    <option value="López"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Zona</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="form-control" placeholder="Zona..." list="zona">
+                  <datalist id="zona">
+                    <option value="Nudo de Paramillo"></option>
+                    <option value="Cauca Costa Pacífica"></option>
+                    <option value="Cauca Andino"></option>
+                    <option value="Nariño Costa Pacífica"></option>
+                    <option value="Nariño Andino"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Tipo de Grupo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Tipo Grupo..." list="tipoGrupo">
+                  <datalist id="tipoGrupo">
+                    <option value="Grupo no formal sin negocio"></option>
+                    <option value="Grupo no formal con negocio"></option>
+                    <option value="Grupo formal sin negocio"></option>
+                    <option value="Grupo formal con negocio"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Código Grupo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Código del Grupo..." disabled="disabled">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Nombre Grupo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Nombre grupo...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Dirección</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Dirección, vereda o corregimiento...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Tipo Organización</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Tipo Organización..." list="tipoOrganizacion">
+                  <datalist id="tipoOrganizacion">
+                    <option value="Asociación"></option>
+                    <option value="Cooperativa"></option>
+                    <option value="Precooperativa"></option>
+                    <option value="Fundación"></option>
+                    <option value="Junta de Acción Comunal"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Nit</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Nit de la organización...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Teléfono Fijo</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Teléfono fijo...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Teléfono Móvil</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Teléfono móvil...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">¿Cuenta bancaria?</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="checkbox">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Número de Cuenta</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Número de cuenta...">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Tipo de Cuenta</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Tipo de cuenta..." list="tipoCuenta">
+                  <datalist id="tipoCuenta">
+                    <option value="Ahorro"></option>
+                    <option value="Corriente"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Banco</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Banco..." list="banco">
+                  <datalist id="banco">
+                    <option value="Banco Agrario"></option>
+                    <option value="Bancolombia"></option>
+                    <option value="Banco de Bogotá"></option>
+                    <option value="Banco Popular"></option>
+                    <option value="Banco de Crédito"></option>
+                  </datalist>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary alert alert-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Capacidades Empresariales</h1>
+            <p>Ministerio de Agricultura y Desarrollo Rural.
+              <br>República de Colombia. Bogotá D.C
+              <br>Avenida Jimenez N°. 7A - 17. PBX (+571)2543300</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5PrfPlcPTzKS_CruxYUjOwWqC-fjZuv0prAHw6TBr479vv_B7w" class="img-thumbnail" height="220px" width="130px">
+                <img src="http://www.nu.org.bo/wp-content/uploads/2013/03/Logo_FIDA.png" class="img-thumbnail" height="220px" width="130px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
