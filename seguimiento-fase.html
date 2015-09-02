@@ -3,8 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/dist/bootstrap-confirmation2/bootstrap-confirmation.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/assets/js/docs.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://mistic100.github.io/Bootstrap-Confirmation/assets/css/docs.min.css" rel="stylesheet" type="text/css">
     <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
     rel="stylesheet" type="text/css"-->
   </head><body>
@@ -36,10 +39,10 @@
             <li>
               <a href="7-talentos-rurales.html">Talentos Rurales</a>
             </li>
-            <li class="active">
+            <li class="">
               <a href="8-clear.html">CLEAR</a>
             </li>
-            <li>
+            <li class="active">
               <a href="seguimiento-principal.html">Seguimiento</a>
             </li>
           </ul>
@@ -69,9 +72,11 @@
                 <a href="0-inicio.html">Inicio</a>
               </li>
               <li>
-                <a href="8-clear.html">CLEAR</a>
+                <a href="seguimiento-principal.html">Seguimiento</a>
               </li>
-              <li class="active">Nuevo</li>
+              <li>
+                <a href="#">Fases</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -89,7 +94,47 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">2014/05/01 IEA - Iniciativa Económica Asociativa Andres Carne de Res</h2>
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
+    <script>
+      $('[data-toggle=confirmation]').confirmation();
+                                                                      //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
+                                                                      //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
+    </script>
+    <div class="section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center well">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input class="form-control" placeholder="Buscar..." type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Buscar</button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 text-center">
+                <div class="btn-group">
+                  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Filtros <span class="fa fa-caret-down"></span></a>
+                </div>
+              </div>
+              <div class="col-md-3 text-center">
+                <a class="btn btn-default">Limpiar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section">
       <div class="container">
         <div class="row">
@@ -97,24 +142,15 @@
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <div class="col-sm-2">
-                  <label for="inputPassword3" class="control-label">Fecha</label>
+                  <label for="inputEmail3" class="control-label">Fase</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="date" name="fecha">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Tipo</label>
-                </div>
-                <div class="col-sm-10">
-                  <input class="form-control" placeholder="Tipo" list="tipo" type="text">
-                  <datalist id="tipo">
-                    <option value="" class="form-control"></option>
-                    <option value="Habilitación"></option>
-                    <option value="Asignación"></option>
-                    <option value="Contraloría social"></option>
-                    <option value="Habilitación"></option>
+                  <input list="fase" placeholder="Fase..." class="form-control" type="text">
+                  <datalist id="fase">
+                    <option value="Fase 0" class="form-control"></option>
+                    <option value="Fase 1"></option>
+                    <option value="Fase 2"></option>
+                    <option value="Fase 3"></option>
                   </datalist>
                 </div>
               </div>
@@ -125,55 +161,10 @@
                 <div class="col-sm-10">
                   <input class="form-control" placeholder="Proceso..." list="proceso" type="text">
                   <datalist id="proceso">
-                    <option value="IEA - Iniciativa Económica Asociativa"></option>
-                    <option value="Mapa Oportunidades del Territorio"></option>
-                    <option value="PI-Perfil de Incubación"></option>
-                    <option value="PN - Plan de Negocio"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Departamento</label>
-                </div>
-                <div class="col-sm-10">
-                  <input class="form-control" placeholder="Departamento..." list="departamento" type="text">
-                  <datalist id="departamento">
-                    <option value="Antioquia" class="form-control"></option>
-                    <option value="Amazonas"></option>
-                    <option value="Bolívar"></option>
-                    <option value="Caquetá"></option>
-                    <option value="Cundinamarca"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Municipio</label>
-                </div>
-                <div class="col-sm-10">
-                  <input class="form-control" placeholder="Municipio..." list="municipio">
-                  <datalist id="municipio">
-                    <option value="Abrego"></option>
-                    <option value="Corinto"></option>
-                    <option value="Tambo"></option>
-                    <option value="Granada"></option>
-                    <option value="López"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Zona</label>
-                </div>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Zona..." list="zona">
-                  <datalist id="zona">
-                    <option value="Nudo de Paramillo"></option>
-                    <option value="Cauca Costa Pacífica"></option>
-                    <option value="Cauca Andino"></option>
-                    <option value="Nariño Costa Pacífica"></option>
-                    <option value="Nariño Andino"></option>
+                    <option value="MOT"></option>
+                    <option value="IEA"></option>
+                    <option value="PI"></option>
+                    <option value="PN"></option>
                   </datalist>
                 </div>
               </div>
@@ -182,16 +173,39 @@
                   <label for="inputEmail3" class="control-label">Estado</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Estado..." list="estado">
+                  <input class="form-control" placeholder="Estado..." list="estado" type="text">
                   <datalist id="estado">
-                    <option value="Ejecutado" class="form-control"></option>
-                    <option value="En Curso"></option>
-                    <option value="Programado"></option>
-                    <option value="Cancelado"></option>
+                    <option value="MOT"></option>
+                    <option value="IEA"></option>
+                    <option value="PI"></option>
+                    <option value="PN"></option>
                   </datalist>
                 </div>
               </div>
             </form>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-left">Grupo #1 Andres Carne De Res</h3>
+              <br>
+              <p class="text-justify">Estamos Reunidos hoy 8 de mayo del 2014 en la region del oriente antioqueño
+                , especificamente en el Departamento de antioquia y en el municipio de
+                Rionegro para llevar a cabo la sustentacion de los proyectos que seran
+                Presentados al Ministerio de Agricultura para su analisis y futura aprovacion.
+                Esto con el fin de poder entregar de la mejor manera los recursos dispuestos
+                por el estado para tal fin.
+                <br>
+                <br>Estan presentes el dia de hoy 7 (siete) funcionarios o representantes
+                encabezados por....Estamos Reunidos hoy 8 de mayo del 2014 en la region
+                del oriente antioqueño , especificamente en el Departamento de antioquia
+                y en el municipio de Rionegro para llevar a cabo la sustentacion de los
+                proyectos que seran Presentados al Ministerio de Agricultura para su analisis
+                y futura aprovacion. Esto con el fin de poder entregar de la mejor manera
+                los recursos dispuestos por el estado para tal fin.
+                <br>
+                <br>Estan presentes el dia de hoy 7 (siete) funcionarios o representantes
+                encabezados por....</p>
+            </div>
           </div>
         </div>
       </div>
