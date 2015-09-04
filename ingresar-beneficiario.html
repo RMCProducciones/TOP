@@ -30,10 +30,10 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav">
-            <li>
+            <li class="active">
               <a href="1-grupos.html">Grupos</a>
             </li>
-            <li class="active">
+            <li class="">
               <a href="7-talentos-rurales.html">Talentos Rurales</a>
             </li>
             <li class="">
@@ -69,9 +69,9 @@
                 <a href="0-inicio.html">Inicio</a>
               </li>
               <li>
-                <a href="7-talentos-rurales.html">Talentos Rurales</a>
+                <a href="1-grupos.html">Grupos</a>
               </li>
-              <li class="active">Nuevo</li>
+              <li class="active">Ingresar beneficiario</li>
             </ul>
           </div>
         </div>
@@ -174,6 +174,101 @@
                     <option value="Afrodecendiente"></option>
                     <option value="Raizal(Archipielago de san Andres)"></option>
                     <option value="ROM(Gitano)"></option>
+                    <option value="Palenquero de San Basilio"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">Rol dentro del grupo familiar</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Rol dentro del grupo familiar..." list="Rol dentro del grupo familiar" type="text">
+                  <datalist id="Rol dentro del grupo familiar">
+                    <option value="" class="form-control"></option>
+                    <option value="Jefe de hogar"></option>
+                    <option value="Miembro Hogar"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">Rol dentro del grupo</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Rol dentro del grupo ..." list="Rol dentro del grupo " type="text">
+                  <datalist id="Rol dentro del grupo">
+                    <option value="Presidente "></option>
+                    <option value="Suplente 1"></option>
+                    <option value="Suplente 2"></option>
+                    <option value="Tesorero"></option>
+                    <option value="Representante del grupo"></option>
+                    <option value="Integrante"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">Desplazado por la violencia</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="Desplazado por la violencia..." list="desplazado por la violencia">
+                  <datalist id="desplazado por la violencia">
+                    <option value="" class="form-control"></option>
+                    <option value="Si"></option>
+                    <option value="No"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">¿Pertenece Red Unidos?</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="¿Pertenece Red Unidos?..." list="¿Pertenece Red Unidos?">
+                  <datalist id="¿Pertenece Red Unidos?">
+                    <option value="" class="form-control"></option>
+                    <option value="Si"></option>
+                    <option value="No"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">¿Es joven rural?</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="¿Es joven rural?..." list="¿Es joven rural?">
+                  <datalist id="¿Es joven rural?">
+                    <option value="" class="form-control"></option>
+                    <option value="Si"></option>
+                    <option value="No"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">¿Sabe Leer?</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="¿Sabe Leer?..." list="¿Sabe Leer?">
+                  <datalist id="¿Sabe Leer?">
+                    <option value="" class="form-control"></option>
+                    <option value="Si"></option>
+                    <option value="No"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">¿Sabe escribir?</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="¿Sabe escribir?..." type="text" list="¿Sabe escribir?">
+                  <datalist id="¿Sabe escribir?">
+                    <option value="" class="form-control"></option>
+                    <option value="Si"></option>
+                    <option value="No"></option>
                   </datalist>
                 </div>
               </div>
@@ -182,7 +277,7 @@
                   <label for="inputEmail3" class="control-label">Departamento</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Departamento..." list="departamento" type="text">
+                  <input class="form-control" placeholder="Departamento..." type="text" list="departamento">
                   <datalist id="departamento">
                     <option value="Antioquia" class="form-control"></option>
                     <option value="Amazonas"></option>
@@ -197,7 +292,7 @@
                   <label for="inputEmail3" class="control-label">Municipio</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Municipio..." list="municipio" type="text">
+                  <input class="form-control" placeholder="Municipio..." type="text" list="municipio">
                   <datalist id="municipio">
                     <option value="Abrego"></option>
                     <option value="Corinto"></option>
@@ -212,7 +307,7 @@
                   <label for="inputEmail3" class="control-label">Zona</label>
                 </div>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" placeholder="Zona..." list="zona">
+                  <input class="form-control" placeholder="Zona..." type="text" list="zona">
                   <datalist id="zona">
                     <option value="Nudo de Paramillo"></option>
                     <option value="Cauca Costa Pacífica"></option>
@@ -227,7 +322,7 @@
                   <label for="inputPassword3" class="control-label">Corregimiento</label>
                 </div>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Corregimiento...">
+                  <input class="form-control" placeholder="Corregimiento..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
@@ -235,7 +330,7 @@
                   <label for="inputPassword3" class="control-label">Vereda</label>
                 </div>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Vereda...">
+                  <input class="form-control" placeholder="Vereda..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
@@ -243,7 +338,7 @@
                   <label for="inputPassword3" class="control-label">Cacerio</label>
                 </div>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Cacerio...">
+                  <input class="form-control" placeholder="Cacerio..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
@@ -286,50 +381,30 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">¿ha sido talento del MADR?</label>
+                  <label for="inputEmail3" class="control-label">Nivel Educativo</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="¿ha sido talento del MADR?..." list="¿ha sido talento del MADR?" type="text">
-                  <datalist id="¿ha sido talento del MADR?">
+                  <input class="form-control" placeholder="Nivel Educativo..." type="text" list="Nivel Educativo">
+                  <datalist id="Nivel Educativo">
                     <option value="" class="form-control"></option>
-                    <option value="Si"></option>
-                    <option value="No"></option>
+                    <option value="Primaria"></option>
+                    <option value="Bachillerato"></option>
+                    <option value="Tecnico"></option>
+                    <option value="Tecnologo"></option>
+                    <option value="Profesional"></option>
+                    <option value="Especialización"></option>
+                    <option value="Maestria"></option>
+                    <option value="Doctorado"></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">¿Pertenece a alguna organización?</label>
+                  <label for="inputEmail3" class="control-label">Numero de hijos</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="¿Pertenece a alguna organización?..." list="¿Pertenece a alguna organización?" type="text">
-                  <datalist id="¿Pertenece a alguna organización?">
-                    <option value="" class="form-control"></option>
-                    <option value="Si"></option>
-                    <option value="No"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">ha sido talento en otros lugares</label>
-                </div>
-                <div class="col-sm-9">
-                  <input class="form-control" placeholder="ha sido talento en otros lugares..." list="ha sido talento en otros lugares" type="text">
-                  <datalist id="ha sido talento en otros lugares">
-                    <option value="" class="form-control"></option>
-                    <option value="Si"></option>
-                    <option value="No"></option>
-                  </datalist>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">¿Cuanto tiempo se ha desempeñado como talento?</label>
-                </div>
-                <div class="col-sm-9">
-                  <input class="form-control" placeholder="¿Cuanto tiempo se ha desempeñado como talento?" type="text" list="¿Cuanto tiempo se ha desempeñado como talento?">
-                  <datalist id="¿Cuanto tiempo se ha desempeñado como talento?">
+                  <input class="form-control" placeholder="Numero de hijos..." type="text" list="Numero de hijos">
+                  <datalist id="Numero de hijos">
                     <option value="" class="form-control"></option>
                     <option value="1"></option>
                     <option value="2"></option>
@@ -342,84 +417,56 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">Ultimo nivel educativo</label>
+                  <label for="inputEmail3" class="control-label">Tipo de documento cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Ultimo nivel educativo..." type="text" list="Ultimo nivel educativo">
-                  <datalist id="Ultimo nivel educativo">
+                  <input class="form-control" placeholder="Tipo de documento..." type="text" list="tipo de documento">
+                  <datalist id="tipo de documento">
                     <option value="" class="form-control"></option>
-                    <option value="Tecnico"></option>
-                    <option value="Tecnologo"></option>
-                    <option value="Universitario"></option>
-                    <option value="Especializacion"></option>
+                    <option value="Cedula ciudadania"></option>
+                    <option value="Tarjeta Identidad"></option>
+                    <option value="Numero de pasaporte "></option>
                   </datalist>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">Area desempeño principal</label>
+                  <label for="inputPassword3" class="control-label">Numero de documento cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Area desempeño principal..." type="text" list="Area desempeño principal">
-                  <datalist id="Area desempeño principal">
-                    <option value="" class="form-control"></option>
-                    <option value="Talento en educacion Financiera"></option>
-                    <option value="Talento acompañamiento tecnico"></option>
-                    <option value="Talento acompañamiento asociativo"></option>
-                    <option value="Talento acompañamiento en concursos ambientales y productivos"></option>
-                  </datalist>
+                  <input class="form-control" placeholder="Numero de documento cónyuge..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">Area desempeño secundaria</label>
+                  <label for="inputPassword3" class="control-label">Primer apellido cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Area desempeño secundaria..." type="text" list="Area desempeño secundaria">
-                  <datalist id="Area desempeño secundaria">
-                    <option value="" class="form-control"></option>
-                    <option value="Talento en educacion Financiera"></option>
-                    <option value="Talento acompañamiento tecnico"></option>
-                    <option value="Talento acompañamiento asociativo"></option>
-                    <option value="Talento acompañamiento en concursos ambientales y productivos"></option>
-                  </datalist>
+                  <input class="form-control" placeholder="Primer apellido cónyuge..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">Area desempeño Terciaria</label>
+                  <label for="inputPassword3" class="control-label">Segundo apellido cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Area desempeño Terciaria..." type="text" list="Area desempeño Terciaria">
-                  <datalist id="Area desempeño Terciaria">
-                    <option value="" class="form-control"></option>
-                    <option value="Talento en educacion Financiera"></option>
-                    <option value="Talento acompañamiento tecnico"></option>
-                    <option value="Talento acompañamiento asociativo"></option>
-                    <option value="Talento acompañamiento en concursos ambientales y productivos"></option>
-                  </datalist>
+                  <input class="form-control" placeholder="Segundo apellido cónyuge..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputPassword3" class="control-label">Nombre de la organizacion</label>
+                  <label for="inputPassword3" class="control-label">Primer nombre cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Nombre de la organizacion..." type="text" id="inputPassword3">
+                  <input class="form-control" placeholder="Primer Nombre cónyuge..." type="text" id="inputPassword3">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-3">
-                  <label for="inputEmail3" class="control-label">Actividad en la que ha participado</label>
+                  <label for="inputPassword3" class="control-label">Segundo nombre cónyuge</label>
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Actividad en la que ha participado en el proyecto..." list="Actividad en la que ha participado" type="text">
-                  <datalist id="Actividad en la que ha participado">
-                    <option value="" class="form-control"></option>
-                    <option value="Feria Empresarial"></option>
-                    <option value="CLEAR"></option>
-                    <option value="MOD"></option>
-                  </datalist>
+                  <input class="form-control" placeholder="Segundo nombre cónyuge..." type="text" id="inputPassword3">
                 </div>
               </div>
             </form>
