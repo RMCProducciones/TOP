@@ -1,0 +1,369 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/dist/bootstrap-confirmation2/bootstrap-confirmation.min.js"></script>
+    <script type="text/javascript" src="http://mistic100.github.io/Bootstrap-Confirmation/assets/js/docs.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://mistic100.github.io/Bootstrap-Confirmation/assets/css/docs.min.css" rel="stylesheet" type="text/css">
+    <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css"-->
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding:20px;">
+            <img src="https://www.minagricultura.gov.co/imgLayout/Banner_nuevo_madr.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>TOP</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="1-grupos.html">Grupos</a>
+            </li>
+            <li>
+              <a href="7-talentos-rurales.html">Talentos Rurales</a>
+            </li>
+            <li class="">
+              <a href="8-clear.html">CLEAR</a>
+            </li>
+            <li>
+              <a href="seguimiento-principal.html.html">Seguimiento</a>
+            </li>
+            <li class="active">
+              <a href="concursos.html">Concursos</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leonard Abella<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Cambiar Contraseña</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="0-inicio.html">Inicio</a>
+              </li>
+              <li>
+                <a href="concursos.html">Concursos</a>
+              </li>
+              <li class="active">Añadir Grupos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>2014/05/01 | Añadir grupos al concurso</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <script>
+      $('[data-toggle=confirmation]').confirmation();
+                                                                              //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
+                                                                              //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
+    </script>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 well">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input class="form-control" placeholder="Buscar..." type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Buscar</button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 text-center">
+                <div class="btn-group">
+                  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Filtros <span class="fa fa-caret-down"></span></a>
+                </div>
+              </div>
+              <div class="col-md-3 text-center">
+                <a class="btn btn-default">Limpiar</a>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="btn-group">
+              <a href="#" class="btn btn-default">Asignar</a>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>
+                    <input type="checkbox">
+                  </th>
+                  <th>Opcionado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="clear-integrantes-editar.html" title="Editar" alt="Editar"></a>
+                    <br>
+                    <a href="#" title="Asignar" alt="Asignar"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="clear-integrantes-editar.html" title="Editar" alt="Editar"></a>
+                    <br>
+                    <a href="#" title="Asignar" alt="Asignar"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>Capacidades Empresariales
+                    <br>NP-RIC-3-2014/05-003
+                    <br>En curso
+                    <br>
+                  </td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="clear-integrantes-editar.html" title="Editar" alt="Editar"></a>
+                    <br>
+                    <a href="#" title="Asignar" alt="Asignar"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="Editar" alt="Editar"></a>
+                    <br>
+                    <a href="#" title="Asignar" alt="Asignar"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="Editar" alt="Editar"></a>
+                    <br>
+                    <a href="#" title="Asignar" alt="Asignar"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                    <br>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col-md-12 text-center">
+              <ul class="pagination">
+                <li>
+                  <a href="#">Anterior</a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#">Siguiente</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <ul class="pager">
+              <li>
+                <a href="#">Asignar  →</a>
+              </li>
+            </ul>
+            <ul class="pager">
+              <li>
+                <a href="#">←  Retirar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 well">
+            <div class="btn-group">
+              <a href="#" class="btn btn-default">Retirar</a>
+              <a href="#" class="btn btn-default"></a>
+              <a href="#" class="btn btn-default"></a>
+              <a href="#" class="btn btn-default"></a>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>
+                    <input type="checkbox">
+                  </th>
+                  <th>Grupos</th>
+                  <th></th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>Andres Carne De Res
+                    <br>NP-RIC-3-2014/05-001
+                    <br>Habilitado
+                    <br>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"></a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span> | </a>
+                    <a href="seguimiento.html" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                  <td>RMC Producciones
+                    <br>NP-RIC-3-2014/05-002
+                    <br>Asignado
+                    <br>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a href="#" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> | </a>
+                    <a href="#" title="Editar" alt="Editar"></a>
+                    <a href="#" title="¿Eliminar registro?" alt="Borrar" aria-hidden="true" data-toggle="confirmation" data-btn-ok-label="" data-btn-ok-icon="glyphicon glyphicon-share-alt" data-btn-ok-class="btn-success" data-btn-cancel-label="" data-btn-cancel-icon="glyphicon glyphicon-ban-circle" data-btn-cancel-class="btn-danger"><span class="glyphicon glyphicon-remove-circle"></span> |  </a>
+                    <a href="seguimiento.html" alt="Detalles" title="Detalles"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></a>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary alert alert-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Capacidades Empresariales</h1>
+            <p>Ministerio de Agricultura y Desarrollo Rural.
+              <br>República de Colombia. Bogotá D.C
+              <br>Avenida Jimenez N°. 7A - 17. PBX (+571)2543300</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5PrfPlcPTzKS_CruxYUjOwWqC-fjZuv0prAHw6TBr479vv_B7w" class="img-thumbnail" height="220px" width="130px">
+                <img src="http://www.nu.org.bo/wp-content/uploads/2013/03/Logo_FIDA.png" class="img-thumbnail" height="220px" width="130px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
