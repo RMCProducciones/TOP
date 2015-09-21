@@ -1,0 +1,179 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css"-->
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding:20px;">
+            <img src="https://www.minagricultura.gov.co/imgLayout/Banner_nuevo_madr.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>TOP</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="1-grupos.html">Grupos</a>
+            </li>
+            <li class="">
+              <a href="7-talentos-rurales.html">Talentos Rurales</a>
+            </li>
+            <li class="">
+              <a href="8-clear.html">CLEAR</a>
+            </li>
+            <li>
+              <a href="seguimiento-principal.html">Seguimiento</a>
+            </li>
+            <li class="">
+              <a href="concursos.html">Concursos</a>
+            </li>
+            <li class="active">
+              <a href="pasantias.html">Rutas y pasantias</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leonard Abella<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Cambiar Contraseña</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="0-inicio.html">Inicio</a>
+              </li>
+              <li>
+                <a href="ferias.html">Ferias comerciales</a>
+              </li>
+              <li class="active">Ingresar nuevo evento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="btn-group">
+              <a href="#" class="btn btn-success">Guardar</a>
+              <a href="#" class="btn btn-danger">Cancelar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputPassword3" class="control-label">Fecha del evento</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="date" name="fecha">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" class="control-label">Tipo de Evento</label>
+                </div>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="Tipo de ruta o pasantia..." list="Tipo de ruta o pasantia">
+                  <datalist id="Tipo de ruta o pasantia">
+                    <option value="Ruta Financiera" class="form-control"></option>
+                    <option value="Ruta Asociativa"></option>
+                    <option value="Ruta de conocimiento tecnico"></option>
+                    <option value="Ruta Financiera avanzada"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputPassword3" class="control-label">Destino taller</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Destino ruta o pasantia..." type="text" id="inputPassword3">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputPassword3" class="control-label">Departamento del evento</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Departamento del evento..." type="text" id="inputPassword3">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputPassword3" class="control-label">Ciudad del Evento</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Ciudad del evento..." type="text" id="inputPassword3">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                  <label for="inputPassword3" class="control-label">Entidad responsable del evento</label>
+                </div>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="Entidad responsable del evento..." type="text" id="inputPassword3">
+                </div>
+              </div>
+              <div class="section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table">
+                        <thead>
+                          <tr></tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
