@@ -9,6 +9,55 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="http://mistic100.github.io/Bootstrap-Confirmation/assets/css/docs.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css" media="screen">
+      .dropdown-submenu {
+          position: relative;
+      }
+      
+      .dropdown-submenu>.dropdown-menu {
+          top: 0;
+          left: 100%;
+          margin-top: -6px;
+          margin-left: -1px;
+          -webkit-border-radius: 0 6px 6px 6px;
+          -moz-border-radius: 0 6px 6px;
+          border-radius: 0 6px 6px 6px;
+      }
+      
+      .dropdown-submenu:hover>.dropdown-menu {
+          display: block;
+      }
+      
+      .dropdown-submenu>a:after {
+          display: block;
+          content: " ";
+          float: right;
+          width: 0;
+          height: 0;
+          border-color: transparent;
+          border-style: solid;
+          border-width: 5px 0 5px 5px;
+          border-left-color: #ccc;
+          margin-top: 5px;
+          margin-right: -10px;
+      }
+      
+      .dropdown-submenu:hover>a:after {
+          border-left-color: #fff;
+      }
+      
+      .dropdown-submenu.pull-left {
+          float: none;
+      }
+      
+      .dropdown-submenu.pull-left>.dropdown-menu {
+          left: -100%;
+          margin-left: 10px;
+          -webkit-border-radius: 6px 0 6px 6px;
+          -moz-border-radius: 6px 0 6px 6px;
+          border-radius: 6px 0 6px 6px;
+      }
+    </style>
     <!--link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
     rel="stylesheet" type="text/css"-->
   </head><body class="">
@@ -33,36 +82,216 @@
           <a class="navbar-brand" href="#"><span>TOP</span></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav"></ul>
           <ul class="nav navbar-nav">
-            <li class="">
-              <a href="1-grupos.html">Grupos</a>
-            </li>
-            <li>
-              <a href="7-talentos-rurales.html">Talentos Rurales</a>
-            </li>
-            <li class="">
-              <a href="8-clear.html">CLEAR</a>
-            </li>
-            <li>
-              <a href="seguimiento-principal.html">Seguimiento</a>
-            </li>
-            <li class="">
-              <a href="concursos.html">Concursos</a>
-            </li>
-            <li class="active">
-              <a href="pasantias.html">Rutas y pasantias</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leonard Abella<strong class="caret"></strong></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion Empresarial<strong class="caret"></strong></a>
               <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Cambiar Contraseña</a>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Formacion de capital social asociativo y desarrollo empresarial</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de grupos </a>
+                    </li>
+                    <li>
+                      <a href="8-clear.html">Gestion de CLEAR</a>
+                    </li>
+                    <li>
+                      <a href="seguimiento-principal.html">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">Cerrar Sesión</a>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Concursos de mejoramiento </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="concursos.html">Gestion de Concursos</a>
+                    </li>
+                    <li>
+                      <a href="jurados.html">Gestion de Jurados</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Servicio complementario</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="pasantias.html">Participacion Rutas y pasantias </a>
+                    </li>
+                    <li>
+                      <a href="talleres.html">Participacion en talleres</a>
+                    </li>
+					<li>
+                      <a href="ferias.html">Participacioón en Ferias</a>
+                    </li>
+					<li>
+                      <a href="#">Participacioón en Ferias de difusion</a>
+                    </li>
+                    <li>
+                      <a href="#">Desarrollo de ferias de difusion del proyecto</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion Financiera<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Participacion en modulos capacitación financiera</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de agendamiento de capacitaciones</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Gestión de rutas y pasantias financiera</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de rutas y pasantias financieras</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Incentivos al ahorro</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de registro de cuentas y planes de ahorro por familia</a>
+                    </li>
+                    <li>
+                      <a href="1-grupos.html">Gestion de registro de planes de ahorro asociativo</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Gestión de polizas de seguro de vida</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion de conocimientos<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Capacitaciones y concursos</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Capacitaciones</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Eventos </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de eventos</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Becas </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Becas</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Experiencias exitosas y lecciones aprendidas</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Experiencias exitosas</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="7-talentos-rurales.html">Talentos rurales</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Talentos rurales</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Ferias</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Ferias</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion Administrativa<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Gestion del POA</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Capacitaciones</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Gestion de informes mensuales</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de eventos</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#">Ordenes de pago </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="1-grupos.html">Gestion de Becas</a>
+                    </li>
+                    <li>
+                      <a href="#">Gestion de seguimiento y monitoreo</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -209,8 +438,8 @@
           <!-- Modal -->
           <script>
             $('[data-toggle=confirmation]').confirmation();
-                                                                                                            //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
-                                                                                                            //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
+                                                                                                                        //$('[data-toggle=confirmation-singleton]').confirmation({ singleton:true });
+                                                                                                                        //$('[data-toggle=confirmation-popout]').confirmation({ popout: true });
           </script>
           <footer class="section section-primary alert alert-success">
             <div class="container">
